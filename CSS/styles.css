@@ -1,40 +1,132 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f7fa; /* Light, neutral background color */
+    color: #333;
     line-height: 1.6;
+    font-weight: 300; /* Lighter font weight for body text */
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-header .nav-links {
+.banner {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Subtle gradient for the banner */
+    padding: 20px 0; /* Reduced padding for less height */
+    color: #333;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+    font-weight: 400; /* Slightly heavier than body for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
-header .nav-links li {
+nav ul li {
     margin: 0 15px;
 }
 
-header .nav-links a {
-    color: #fff;
+nav ul li a {
     text-decoration: none;
+    color: #555;
+    font-weight: 400; /* Medium weight for navigation links */
+    transition: color 0.3s;
 }
 
-.hero {
-    text-align: center;
-    padding: 50px 0;
-    background: #f4f4f4;
+nav ul li a:hover {
+    color: #0073e6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #0073e6;
+    font-weight: 400; /* Medium weight for headings */
+}
+
+.profile-info p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+    font-weight: 300; /* Light weight for additional info */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+    font-weight: 300; /* Light weight for social links */
+    transition: color 0.3s;
+}
+
+.social-links i {
+    margin-right: 5px;
+}
+
+.social-links a:hover {
+    color: #005bb5;
+}
+
+.profile-description {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 300; /* Light weight for description text */
 }
 
 footer {
     text-align: center;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    font-weight: 300; /* Light weight for footer text */
 }
