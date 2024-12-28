@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Variance (ANOVA)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #444;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog: Analysis of Variance (ANOVA)</h1>
+    </header>
+    <main>
+        <h1>Analysis of Variance (ANOVA)</h1>
+        <p>An analysis of variance (ANOVA) tests whether statistically significant differences exist between more than two samples. For this purpose, the means and variances of the respective groups are compared with each other. In contrast to the t-test, which tests whether there is a difference between two samples, the ANOVA tests whether there is a difference between more than two groups.</p>
+        <p>There are different types of analysis of variance, the most common are the one-way and two-way analysis of variance.</p>
+
+        <h2>Why not calculate multiple t-tests?</h2>
+        <p>ANOVA is used when there are more than two groups. Of course, it would also be a possibility to calculate a t-test for each combination of the groups. The problem here, however, is that every hypothesis test has some degree of error. This probability of error is usually set at 5%, so that, from a purely statistical point of view, every 20th test gives a wrong result.</p>
+        <p>If, for example, 20 groups are compared in which there is actually no difference, one of the tests will show a significant difference purely due to the sampling.</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sumit Chand. All rights reserved.</p>
+    </footer>
+</body>
+</html>
